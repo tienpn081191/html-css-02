@@ -1,4 +1,438 @@
-a {
-    color: #000;
-    text-decoration: none;
+.main-content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.body {
+    display: flex;
+}
+/* ---header--- */
+header {
+    padding-top: 36px;
+    height: 50px;
+    background-color: #FFFCF4;
+}
+header .body {
+    justify-content: space-between;
+}
+header .logo {
+    margin-top: 8px;
+    width: 85px;
+    height: 34px;
+}
+header .nav {
+    margin-top: 13px;
+    width: 359px;
+    height: 28px;
+    margin-left: 522px;
+}
+header .nav ul {
+    display: flex;
+    justify-content: space-between;
+    /* width: 398px; */
+}
+.fixed-header .action {
+    margin-top: 11px;
+}
+
+/* ---hero--- */
+
+.hero {
+    padding-top: 64px;
+    background-color: #FFFCF4;
+}
+.hero .media-block {
+    width: 570px;
+    height: 685px;
+    position: relative;
+}
+.hero .media-block .image {
+    width: 470px;
+    height: 685px;
+}
+.hero .hero-courses {
+    width: 270px;
+    height: 244px;
+    background-color: #fff;
+    left: 300px;
+    top: 393px;
+    position: absolute;
+    border-radius: 12px;
+}
+.hero .hero-courses .courses {
+    display: flex;
+    width: 183px;
+    height: 56px;
+    margin-left: 20px;
+    /* margin-top: 24px; */
+}
+.hero .hero-courses :first-child {
+    margin-top: 14px;
+}
+.hero .hero-courses :nth-child(2) {
+    margin-top: 14px;
+}
+.hero .hero-courses :nth-child(3) {
+    margin-top: 14px;
+}
+.hero .hero-courses .icon {
+    width: 48px;
+    height: 48px;
+}
+.hero .hero-courses .info {
+    margin-left: 16px;
+    margin-top: 0;
+}
+.hero .hero-courses .info .class-name {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.hero .hero-courses .info .desc {
+    font-size: 14px;
+    line-height: 20px;
+}
+.content-block .qty {
+    display: flex;
+}
+.hero .content-block {
+    margin-top: 128px;
+    width: 470px;
+    height: 558px;
+    margin-left: 130px;
+}
+.hero .content-block .title {
+    font-size: 58px;
+    font-weight: 700;
+}
+.hero .content-block .desc {
+    margin-top: 22px;
+    font-size: 20px;
+    width: 470px;
+    line-height: 30px;
+}
+.hero .content-block .action {
+    margin-top: 50px;
+}
+.hero .content-block .action .action1 {
+    font-size: 20px;
+    margin-left: 14px;
+}
+.hero .content-block .action .btn-action-link {
+    font-size: 20px;
+    margin-left: 34px;
+}
+.hero .content-block .action .icon {
+    margin-left: 61px;
+}
+.hero .content-block .desc1 {
+   margin-top: 530px;
+   font-size: 20px;
+}
+.hero .content-block .qty {
+    margin-top: 8px;
+}
+.hero .content-block .qty-item {
+    display: flex;
+    align-items: end;
+    /* margin-left: 50px; */
+}
+.hero .content-block .qty :last-child {
+    margin-left: 50px;
+}
+.hero .content-block .qty-item :last-child {
+    margin-left: 20px;
+}
+.hero .content-block .qty-item strong {
+    font-size: 44px;
+    font-weight: 700;
+}
+/* ---popular--- */
+.popular {
+    padding-top: 200px;
+}
+.popular .popular-top .info .sub-title {
+    font-size: 38px;
+    font-weight: 700;
+}
+.popular .popular-top .info .desc {
+    margin-top: 16px;
+    width: 458px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #5F5B53;
+}
+.popular-list {
+    display: flex;
+    margin-top: 25px;
+}
+.popular-list .course-item {
+    padding: 10px;
+}
+.popular-list .course-item .thumb{
+    width: 350px;
+    border-radius: 12px 12px 0 0 ;
+}
+.popular-list .course-item .info {
+    margin-top: 16px;
+}
+.popular-list .course-item .info .title {
+    display: flex;
+}
+.popular-list .course-item .info .desc {
+    margin-top: 6px;
+    line-height: 26px;
+}
+.popular-list .course-item .info .cost-action {
+    margin-top: 22px;
+}
+/* ---feedback--- */
+.feedback {
+    margin-top: 200px;
+    height: 380px;
+    background-color: #2e2100;
+}
+.feedback .info .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+.feedback .info .title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+}
+.feedback .info .desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.feedback .feedback-item {
+    display: flex;
+}
+.feedback .info {
+    width: 159px;
+    height: 188px;
+    margin-top: 96px;
+}
+.feedback .title {
+    color: white;
+}
+.feedback .desc {
+    color: antiquewhite;
+}
+.feedback .content {
+    color: white;
+    width: 770px;
+    height: 188px;
+    margin-top: 96px;
+    margin-left: 241px;
+}
+.feedback .content .content1 {
+    font-size: 28px;
+    line-height: 40px;
+    margin-left: 25px;
+}
+/* ---features--- */
+.features {
+    margin-top: 200px;
+}
+.features .img {
+    display: flex;
+    width: 570px;
+    height: 438px;
+}
+.features .image1 {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+}
+.features .image2 {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+}
+.features .content {
+    width: 470px;
+    height: 322px;
+    margin-left: 130px;
+    margin-top: 58px;
+}
+.features .content .title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.features .content .desc {
+    line-height: 28px;
+    font-size: 18px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+.features .content .desc1 {
+    font-size: 18px;
+    width: 458px;
+    margin-bottom: 43px;
+}
+.features .content .btn-action1 {
+    margin-top: 43px;
+}
+/* ---features-2nd--- */
+.features-2nd {
+    margin-top: 200px;
+}
+.features-2nd .content {
+    width: 570px;
+    margin-top: 71px;
+}
+.features-2nd .content .title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.features-2nd .content .desc {
+    line-height: 28px;
+    font-size: 18px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+.features-2nd .img {
+    margin-top: 71px;
+    margin-left: 130px;
+}
+.features-2nd .image3 {
+    width: 470px;
+    height: 440px;
+    border-radius: 20px;
+}
+/* ---blog--- */
+.blog {
+    padding-top: 96px;
+    margin-top: 200px;
+    height: 782px;
+    background-color: #FFFCF4;
+    position: relative;
+}
+.blog .top {
+    text-align: center;
+    height: 120px;
+}
+.blog .top .heading-lv2 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.blog .top .desc {
+    font-size: 18px;
+    line-height: 28px;
+    width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+.blog .blog-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+.blog .item .thumb {
+    width: 370px;
+    border-radius: 16px 16px 0 0;
+}
+.blog .item .info {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.blog .item .info .desc {
+    margin-top: 25px;
+    width: 330px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+.blog .item .info .btn {
+    /* margin-top: 24px; */
+}
+/* .blog .blog-dots .dot {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    color: black;
+} */
+/* ---footer--- */
+.footer {
+    height: 428px;
+    background-color: #2E2100;
+}
+.footer .row {
+    display: flex;
+}
+.footer .row .desc {
+    color: #fff;
+}
+.footer .row .title {
+    color: #fff;
+}
+.footer .row .list li a {
+    color: #fff;
+}
+.footer .row .column1 {
+    width: 267px;
+    height: 163px;
+    margin-top: 96px;
+}
+.footer .row .column2 {
+    width: 130px;
+    height: 211px;
+    margin-top: 96px;
+    margin-left: 136px;
+}
+.footer .row .column2 .title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.footer .row .column2 .list {
+    line-height: 26px;
+    font-size: 14px;
+}
+.footer .row .column2 .list li a {
+    color: #BFBCB2;
+}
+.footer .row .column3 .title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.footer .row .column3 .list {
+    line-height: 26px;
+    font-size: 14px;
+}
+.footer .row .column3 .list li a {
+    color: #BFBCB2;
+}
+.footer .row .column4 .title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.footer .row .column4 .list {
+    line-height: 26px;
+    font-size: 14px;
+}
+.footer .row .column4 .list li a {
+    color: #BFBCB2;
+}
+.footer .row .column3 {
+    width: 137px;
+    height: 211px;
+    margin-top: 96px;
+    margin-left: 130px;
+}
+.footer .row .column4 {
+    width: 231px;
+    height: 199px;
+    margin-top: 96px;
+    margin-left: 130px;
 }

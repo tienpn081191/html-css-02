@@ -1,45 +1,88 @@
 .main-content {
     width: 1170px;
+    max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
+    font-family: poppins;
 }
 .body {
     display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+a {
+    text-decoration: none;
 }
 /* ---header--- */
 header {
-    padding-top: 36px;
+    padding: 36px 0 8px 0;
     height: 50px;
     background-color: #FFFCF4;
+    position: sticky;
+    top: -28px;
 }
 header .body {
     justify-content: space-between;
 }
-header .logo {
+/* header .logo {
     margin-top: 8px;
     width: 85px;
     height: 34px;
-}
+} */
 header .nav {
     margin-top: 13px;
-    width: 359px;
+    /* width: 359px; */
     height: 28px;
-    margin-left: 522px;
+    margin-left: auto;
 }
 header .nav ul {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* width: 398px; */
 }
-.fixed-header .action {
-    margin-top: 11px;
+header .nav ul>li a {
+    /* font-weight: bold; */
+    color: #5F5B53;
+    padding: 8px 21px;
+    font-size: 1.6rem;
+    position: relative;;
 }
-
+header .nav a:hover,
+header .nav ul li .a {
+    color: #000;
+    text-shadow: 1px 0 0 currentColor;
+}
+header .nav ul li .a::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+}
+.fixed-header .action {
+    margin-top: 1px;
+    padding: 15px 35px 15px 35px;
+    background-color: #000;
+    border-radius: 24.5px;
+    margin-left: 49px;
+}
+.fixed-header .action-link {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+}
 /* ---hero--- */
 
 .hero {
     padding-top: 64px;
     background-color: #FFFCF4;
+    height: 750px;
 }
 .hero .media-block {
     width: 570px;
@@ -49,6 +92,8 @@ header .nav ul {
 .hero .media-block .image {
     width: 470px;
     height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
 }
 .hero .hero-courses {
     width: 270px;
@@ -58,7 +103,11 @@ header .nav ul {
     top: 393px;
     position: absolute;
     border-radius: 12px;
+    box-shadow: 0px 16px 32px 0px #0000000D;
+    /* box-shadow: 10px 10px #f4f1f1 ; */
 }
+
+
 .hero .hero-courses .courses {
     display: flex;
     width: 183px;
@@ -80,6 +129,7 @@ header .nav ul {
     height: 48px;
 }
 .hero .hero-courses .info {
+    
     margin-left: 16px;
     margin-top: 0;
 }
@@ -91,50 +141,76 @@ header .nav ul {
 .hero .hero-courses .info .desc {
     font-size: 14px;
     line-height: 20px;
+    
 }
 .content-block .qty {
     display: flex;
 }
 .hero .content-block {
-    margin-top: 128px;
+    margin-top: 64px;
     width: 470px;
     height: 558px;
     margin-left: 130px;
 }
 .hero .content-block .title {
-    font-size: 58px;
+    font-size: 5.8rem;
     font-weight: 700;
+    font-family: Sen;
+    line-height: 68px;
+    letter-spacing: -0.2rem;
 }
 .hero .content-block .desc {
     margin-top: 22px;
     font-size: 20px;
     width: 470px;
     line-height: 30px;
+    color: #5F5B53;
 }
 .hero .content-block .action {
-    margin-top: 50px;
+    margin-top: 55px;
+    margin-bottom: 80px;
+    align-self: center;
+    position: relative;
 }
 .hero .content-block .action .action1 {
-    font-size: 20px;
-    margin-left: 14px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-left: 104px;
+    color: #171100;
+    position: absolute;
 }
 .hero .content-block .action .btn-action-link {
-    font-size: 20px;
-    margin-left: 34px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: 
+    #FFB900;
+    padding: 17px 30px ;
+    border-radius: 30px;
 }
 .hero .content-block .action .icon {
-    margin-left: 61px;
+    margin-left: 41px;
+    margin-right: 8px;
+    margin-top: -15px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px #00000012;
+    align-items: center;
+    position: absolute;
 }
 .hero .content-block .desc1 {
    margin-top: 530px;
    font-size: 20px;
+   color: #5F5B53;
+   /* margin-bottom: 30px; */
 }
 .hero .content-block .qty {
-    margin-top: 8px;
+    margin-top: 25px;
 }
 .hero .content-block .qty-item {
     display: flex;
-    align-items: end;
+    align-items: center;
     /* margin-left: 50px; */
 }
 .hero .content-block .qty :last-child {
@@ -144,47 +220,96 @@ header .nav ul {
     margin-left: 20px;
 }
 .hero .content-block .qty-item strong {
-    font-size: 44px;
+    font-size: 4.4rem;
     font-weight: 700;
+    font-family: sen;
+}
+.hero .content-block .qty-item-desc {
+    font-size: 1.8rem;
+    margin-top: 15px;
 }
 /* ---popular--- */
 .popular {
     padding-top: 200px;
 }
 .popular .popular-top .info .sub-title {
-    font-size: 38px;
+    font-size: 3.8rem;
     font-weight: 700;
+    font-family: sen;
+    color: #171100;
+    letter-spacing: -0.2rem;
 }
 .popular .popular-top .info .desc {
     margin-top: 16px;
     width: 458px;
-    font-size: 20px;
+    font-size: 1.8rem;
     line-height: 30px;
     color: #5F5B53;
+    font-family: poppins;
 }
 .popular-list {
     display: flex;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 .popular-list .course-item {
     padding: 10px;
+    border: 1px solid #E2DFDA;
 }
 .popular-list .course-item .thumb{
-    width: 350px;
+    width: 370px;
+    height: 278px;
+    object-fit: cover;
     border-radius: 12px 12px 0 0 ;
 }
 .popular-list .course-item .info {
     margin-top: 16px;
+    margin-left: 10px;
 }
 .popular-list .course-item .info .title {
     display: flex;
+    justify-content: space-between;
+   }
+.popular-list .course-item .info .title-1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 159px;
+}
+.popular-list .course-item .info .star-icon {
+    margin-left: 130px;
+}
+.popular-list .course-item .info .number{
+    font-size: 1.6rem;
+    margin-right: 20px;
+    color: #FFB900;
 }
 .popular-list .course-item .info .desc {
+    width: 326px;
     margin-top: 6px;
     line-height: 26px;
+    font-size: 1.4rem;
+    font-family: poppins;
+    color: #5F5B53;
 }
 .popular-list .course-item .info .cost-action {
     margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+.popular-list .course-item .info .cost-action .cost {
+    font-size: 1.8rem;
+    color: #171100;
+    font-family: poppins;
+    font-weight: 600;
+}
+.popular-list .course-item .info .btn-action-cost {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 40px;
+    margin-top: -10px;
+    padding: 15px 25px;
+    background-color:#FFB900;
+    border-radius: 30px;
 }
 /* ---feedback--- */
 .feedback {
@@ -217,9 +342,16 @@ header .nav ul {
 }
 .feedback .title {
     color: white;
+    font-family: sen;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-top: 10px;
 }
 .feedback .desc {
     color: antiquewhite;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #BFBCB2;
 }
 .feedback .content {
     color: white;
@@ -229,7 +361,9 @@ header .nav ul {
     margin-left: 241px;
 }
 .feedback .content .content1 {
-    font-size: 28px;
+    font-size: 2.6rem;
+    font-weight: 400;
+    font-style: italic;
     line-height: 40px;
     margin-left: 25px;
 }
@@ -246,11 +380,15 @@ header .nav ul {
     width: 270px;
     height: 404px;
     border-radius: 16px;
+    object-fit: cover;
 }
 .features .image2 {
     width: 270px;
     height: 404px;
     border-radius: 16px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 .features .content {
     width: 470px;
@@ -304,6 +442,7 @@ header .nav ul {
     width: 470px;
     height: 440px;
     border-radius: 20px;
+    object-fit: cover;
 }
 /* ---blog--- */
 .blog {
@@ -338,6 +477,8 @@ header .nav ul {
 .blog .item .thumb {
     width: 370px;
     border-radius: 16px 16px 0 0;
+    height: 250px;
+    object-fit: cover;
 }
 .blog .item .info {
     margin-top: 20px;
